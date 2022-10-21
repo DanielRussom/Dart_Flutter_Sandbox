@@ -9,6 +9,11 @@ class UserGreeter extends StatefulWidget {
 }
 
 class _UserGreeterState extends State<UserGreeter> {
+
+  void _submit(){
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +21,13 @@ class _UserGreeterState extends State<UserGreeter> {
         children:<Widget>[
           TextField(
               key: Key('nameInputBox')
+          ),
+          TextButton(
+            key: Key('submitButton'),
+            child: Text(
+              'Submit'
+            ),
+            onPressed: _submit,
           )
         ]
       )
