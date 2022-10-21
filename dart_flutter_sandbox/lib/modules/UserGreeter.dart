@@ -1,13 +1,24 @@
 
 import 'package:flutter/material.dart';
 
-class UserGreeter extends StatelessWidget {
+class UserGreeter extends StatefulWidget {
   const UserGreeter({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
+  State<UserGreeter> createState()  => _UserGreeterState();
+}
 
+class _UserGreeterState extends State<UserGreeter> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children:<Widget>[
+          TextField(
+              key: Key('nameInputBox')
+          )
+        ]
+      )
+    );
+  }
 }

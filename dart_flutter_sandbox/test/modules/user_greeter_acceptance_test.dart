@@ -1,11 +1,21 @@
 
 import 'package:dart_flutter_sandbox/modules/UserGreeter.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('User Greeter should greet user by entered name', (WidgetTester tester) async {
-    await tester.pumpWidget(const UserGreeter());
+
+    var unitUnderTest = new UserGreeter();
+    var testWrapper = new MaterialApp
+    (
+      home: unitUnderTest
+    );
+
+    await tester.pumpWidget(testWrapper);
+
+    // find Text prompting user
 
     final inputFieldFinder = find.byKey(const Key('nameInputBox'));
     await tester.enterText(inputFieldFinder, "Test Name");
