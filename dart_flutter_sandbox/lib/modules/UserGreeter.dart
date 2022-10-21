@@ -19,6 +19,7 @@ class _UserGreeterState extends State<UserGreeter> {
     return Scaffold(
       body: Column(
         children:<Widget>[
+          Text('Hello, Test Name!'),
           TextField(
               key: Key('nameInputBox')
           ),
