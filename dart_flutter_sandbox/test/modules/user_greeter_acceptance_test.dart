@@ -1,5 +1,5 @@
 
-import 'package:dart_flutter_sandbox/modules/UserGreeter.dart';
+import 'package:dart_flutter_sandbox/modules/user_greeter.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_test/flutter_test.dart';

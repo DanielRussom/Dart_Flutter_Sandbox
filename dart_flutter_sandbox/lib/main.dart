@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'modules/UserGreeter.dart';
+import 'modules/user_greeter.dart';
 
 void main() {
   runApp(const MyApp());

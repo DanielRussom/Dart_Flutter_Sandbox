@@ -1,4 +1,5 @@
 
+import 'package:dart_flutter_sandbox/modules/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -48,14 +49,4 @@ class RegistrationScreen {
 }
 
 class HomeScreen {
-}
-
-class LoginScreen extends Widget{
-  const LoginScreen({super.key});
-
-  @override
-  Element createElement() {
-    // TODO: implement createElement
-    throw UnimplementedError();
-  }
 }
