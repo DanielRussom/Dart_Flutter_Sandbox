@@ -1,12 +1,11 @@
 
 import 'package:flutter/material.dart';
 
-class LoginScreen extends Widget{
+class LoginScreen extends StatelessWidget{
   const LoginScreen({super.key});
 
   @override
-  Element createElement() {
-    // TODO: implement createElement
-    throw UnimplementedError();
+  Widget build(BuildContext context) {
+    return const Text('User Greeter');
   }
 }
